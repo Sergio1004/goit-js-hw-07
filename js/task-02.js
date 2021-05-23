@@ -23,6 +23,7 @@ const ingredients = [
   'Зелень',
   'Приправы',
 ];
+
 const allIngredients = document.querySelector('#ingredients')
 
 const addIngredients = ingredients.map(item => {
@@ -30,5 +31,5 @@ const addIngredients = ingredients.map(item => {
     elements.textContent = item;
     return elements;
 })
+
 allIngredients.append(...addIngredients)
-console.log(allIngredients)
